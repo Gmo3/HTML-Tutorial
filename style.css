@@ -1,7 +1,22 @@
-.nav__link{
-    color: black;
+div {
+  transition: background-color 800ms;
 }
-.nav__link--active{
-    font-weight: bold;
-    color: purple;
+div:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+button {
+  animation: float 2000ms infinite alternate-reverse;
+}
+button:hover {
+  background-color: black;
+  color: white;
+}
+
+@keyframes float {
+  0% {
+    transform:translateY(0);
+  }
+  100% {
+    transform:translateY(10px);
+  }
 }
